@@ -7,11 +7,13 @@ import {HttpModule} from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {AddQuotePage} from "../pages/add-quote/add-quote";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    AddQuotePage,
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -20,7 +22,7 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage, AddQuotePage
   ],
   providers: [
     StatusBar,

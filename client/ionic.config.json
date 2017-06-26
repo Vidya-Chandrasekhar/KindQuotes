@@ -1,5 +1,15 @@
 {
   "name": "Client",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/quotes",
+      "proxyUrl": "http://localhost:8080/quotes/"
+    },
+    {
+      "path": "/quote",
+      "proxyUrl": "http://localhost:8080/quote/"
+    }
+    ]
 }
